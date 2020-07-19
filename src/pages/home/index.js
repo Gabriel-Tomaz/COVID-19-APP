@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import { Picker } from '@react-native-community/picker';
-import {Text} from 'react-native';
 
 import FooterMenu from '../../components/footerMenu';
 import api from '../../services/api';
 
-import { Main,ContentLogo,ContentText, ColorText,SelectContent, Select, SearchButton,ButtonTitle } from './styles';
+import { Main, ColorText, ContentText } from '../../../styles/global';
+import { ContentLogo, SelectContent, SearchButton,ButtonTitle } from './styles';
 import logoImg from '../../assets/img/logo.png';
 
 export default function Home(){ 

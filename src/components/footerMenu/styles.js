@@ -11,5 +11,6 @@ export const MenuBody = styled.View`
     background-color: ${Colors.primaryColor};
     position: absolute;
     bottom: 0;
+    z-index: 2;
 `;
 

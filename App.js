@@ -17,10 +17,11 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Home from './src/pages/home';
+import Stats from './src/pages/stats';
 
 export default function App(){
   return(
-    <Home />
+    <Stats />
   );
 }
 
