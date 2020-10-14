@@ -1,12 +1,6 @@
 import styled from 'styled-components/native';
 import Colors from '../../../styles/colors';
 
-export const ContentLogo = styled.Image`
-   width: 71%;
-   height: 65px;
-   margin-bottom: 20px;
-`;
-
 export const SelectContent = styled.View`
     width: 85%;
     height: 50px;

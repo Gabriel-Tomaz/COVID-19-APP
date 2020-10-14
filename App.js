@@ -18,10 +18,11 @@ import {
 
 import Home from './src/pages/home';
 import Stats from './src/pages/stats';
+import About from './src/pages/about'
 
 export default function App(){
   return(
-    <Stats />
+    <Home />
   );
 }
 

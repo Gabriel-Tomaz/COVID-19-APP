@@ -19,4 +19,12 @@ export const ContentText = styled.Text`
     font-weight: 700;
     font-size: 17px;
     margin-bottom: 20px;
+    text-align: justify
+`;
+
+
+export const ContentLogo = styled.Image`
+   width: 65%;
+   height: 61px;
+   margin-bottom: 25px;
 `;
