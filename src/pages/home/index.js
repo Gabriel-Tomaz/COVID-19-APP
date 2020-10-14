@@ -5,8 +5,8 @@ import { Picker } from '@react-native-community/picker';
 import FooterMenu from '../../components/footerMenu';
 import api from '../../services/api';
 
-import { Main, ColorText, ContentText } from '../../../styles/global';
-import { ContentLogo, SelectContent, SearchButton,ButtonTitle } from './styles';
+import { Main, ColorText, ContentText, ContentLogo } from '../../../styles/global';
+import { SelectContent, SearchButton,ButtonTitle } from './styles';
 import logoImg from '../../assets/img/logo.png';
 
 export default function Home(){ 
@@ -50,7 +50,6 @@ export default function Home(){
             <SearchButton>
                 <ButtonTitle>Buscar</ButtonTitle>
             </SearchButton>
-            <FooterMenu></FooterMenu>
         </Main>
     );
 }
