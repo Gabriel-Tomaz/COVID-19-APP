@@ -28,13 +28,13 @@ export default function Home(){
     },[]);
 
     function listStatus(){
-        if (uf.UF == "") {
+        if (uf.UF === "") {
             alert("Selecione um Estado");
         }else{
             Navigation.navigate('Stats', {uf});
         }
 
-        
+        setUF({UF: ""});
     }
 
     states.sort((item,itemB) => (
