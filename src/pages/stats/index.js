@@ -2,7 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Image } from 'react-native';
 import { PieChart } from 'react-native-svg-charts';
-
+import {useNavigation,useRoute} from '@react-navigation/native';
+ 
 import Emoji from 'react-native-emoji';
 
 import FooterMenu from '../../components/footerMenu';
@@ -15,14 +16,16 @@ import Colors from '../../../styles/colors';
 import TopBarImg from '../../assets/img/logoTopBar.png';
 
 export default function Stats(){
-    const [state, setState] = useState('ce');
+    const Navigation = useNavigation();
+    const Route = useRoute();
+
+    const UF = Route.params.uf;
+
     const [cases, setCases] = useState([]);
-
-
 
     //Retornando dados da API 
     async function getCases(){
-        await api.get('api/report/v1/brazil/uf/' + state).then(response => {
+        await api.get('api/report/v1/brazil/uf/' + UF.UF).then(response => {
             setCases(response.data);
         });
     }
